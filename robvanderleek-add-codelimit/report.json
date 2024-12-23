@@ -1,0 +1,265 @@
+{
+  "version": "0.16.0",
+  "uuid": "ed87a7bd-8b1c-42e7-b8f4-08fca29819fe",
+  "timestamp": "2024-12-23T14:03:23+00:00",
+  "root": "/github/workspace",
+  "repository": {
+    "owner": "robvanderleek",
+    "name": "twtxt",
+    "branch": "HEAD"
+  },
+  "codebase": {
+    "totals": {
+      "Python": {
+        "files": 14,
+        "lines_of_code": 734,
+        "functions": 96,
+        "hard_to_maintain": 3,
+        "unmaintainable": 0
+      }
+    },
+    "tree": {
+      "./": {
+        "entries": [
+          "setup.py",
+          "twtxt/",
+          "docs/"
+        ],
+        "profile": [510, 118, 106, 0]
+      },
+      "twtxt/": {
+        "entries": [
+          "helper.py",
+          "__init__.py",
+          "twfile.py",
+          "log.py",
+          "twhttp.py",
+          "models.py",
+          "mentions.py",
+          "cache.py",
+          "cli.py",
+          "__main__.py",
+          "config.py",
+          "parser.py"
+        ],
+        "profile": [510, 118, 106, 0]
+      },
+      "docs/": {
+        "entries": [
+          "conf.py"
+        ],
+        "profile": [0, 0, 0, 0]
+      }
+    },
+    "files": {
+      "setup.py": {
+        "checksum": "32ece4afd7fbac71a8ba07de73d6ab74",
+        "language": "Python",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      },
+      "twtxt/helper.py": {
+        "checksum": "dc67e73d6204c0dd055a4a34d4ae9569",
+        "language": "Python",
+        "loc": 131,
+        "profile": [91, 40, 0, 0],
+        "measurements": [
+          {"unit_name": "style_timeline", "start": {"line": 23, "column": 1}, "end": {"line": 27, "column": 112}, "value": 5},
+          {"unit_name": "style_tweet", "start": {"line": 30, "column": 1}, "end": {"line": 49, "column": 51}, "value": 19},
+          {"unit_name": "style_source", "start": {"line": 52, "column": 1}, "end": {"line": 60, "column": 28}, "value": 9},
+          {"unit_name": "style_source_with_status", "start": {"line": 63, "column": 1}, "end": {"line": 83, "column": 56}, "value": 21},
+          {"unit_name": "validate_created_at", "start": {"line": 86, "column": 1}, "end": {"line": 91, "column": 55}, "value": 6},
+          {"unit_name": "validate_text", "start": {"line": 94, "column": 1}, "end": {"line": 109, "column": 61}, "value": 14},
+          {"unit_name": "validate_config_key", "start": {"line": 112, "column": 1}, "end": {"line": 122, "column": 29}, "value": 10},
+          {"unit_name": "run_pre_tweet_hook", "start": {"line": 125, "column": 1}, "end": {"line": 137, "column": 26}, "value": 13},
+          {"unit_name": "run_post_tweet_hook", "start": {"line": 140, "column": 1}, "end": {"line": 151, "column": 33}, "value": 12},
+          {"unit_name": "sort_and_truncate_tweets", "start": {"line": 154, "column": 1}, "end": {"line": 163, "column": 18}, "value": 10},
+          {"unit_name": "generate_user_agent", "start": {"line": 166, "column": 1}, "end": {"line": 179, "column": 38}, "value": 12}
+        ]
+      },
+      "twtxt/__init__.py": {
+        "checksum": "6975e93bfd1a3c4be7e3840fe521d1cc",
+        "language": "Python",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      },
+      "twtxt/twfile.py": {
+        "checksum": "64732b9af4b70678c46ac8cc6b93163b",
+        "language": "Python",
+        "loc": 17,
+        "profile": [17, 0, 0, 0],
+        "measurements": [
+          {"unit_name": "get_local_tweets", "start": {"line": 18, "column": 1}, "end": {"line": 26, "column": 54}, "value": 9},
+          {"unit_name": "add_local_tweet", "start": {"line": 29, "column": 1}, "end": {"line": 36, "column": 16}, "value": 8}
+        ]
+      },
+      "twtxt/log.py": {
+        "checksum": "d10c77ae56b5af7dacf4ef39d02e835d",
+        "language": "Python",
+        "loc": 11,
+        "profile": [11, 0, 0, 0],
+        "measurements": [
+          {"unit_name": "init_logging", "start": {"line": 14, "column": 1}, "end": {"line": 27, "column": 42}, "value": 11}
+        ]
+      },
+      "twtxt/twhttp.py": {
+        "checksum": "1cd210bb0c948b4108d9f7cf3116f330",
+        "language": "Python",
+        "loc": 28,
+        "profile": [28, 0, 0, 0],
+        "measurements": [
+          {"unit_name": "__init__", "start": {"line": 36, "column": 5}, "end": {"line": 39, "column": 43}, "value": 4},
+          {"unit_name": "natural_content_length", "start": {"line": 42, "column": 5}, "end": {"line": 43, "column": 57}, "value": 2},
+          {"unit_name": "natural_last_modified", "start": {"line": 46, "column": 5}, "end": {"line": 53, "column": 87}, "value": 8},
+          {"unit_name": "get_remote_tweets", "start": {"line": 141, "column": 1}, "end": {"line": 149, "column": 37}, "value": 7},
+          {"unit_name": "get_remote_status", "start": {"line": 152, "column": 1}, "end": {"line": 160, "column": 37}, "value": 7}
+        ]
+      },
+      "twtxt/models.py": {
+        "checksum": "6e06cbe309bd6629bc0970e64f5ab9e0",
+        "language": "Python",
+        "loc": 51,
+        "profile": [51, 0, 0, 0],
+        "measurements": [
+          {"unit_name": "__init__", "start": {"line": 25, "column": 5}, "end": {"line": 39, "column": 29}, "value": 12},
+          {"unit_name": "_is_valid_operand", "start": {"line": 42, "column": 5}, "end": {"line": 44, "column": 46}, "value": 3},
+          {"unit_name": "__lt__", "start": {"line": 46, "column": 5}, "end": {"line": 49, "column": 50}, "value": 4},
+          {"unit_name": "__le__", "start": {"line": 51, "column": 5}, "end": {"line": 54, "column": 119}, "value": 4},
+          {"unit_name": "__gt__", "start": {"line": 56, "column": 5}, "end": {"line": 59, "column": 50}, "value": 4},
+          {"unit_name": "__ge__", "start": {"line": 61, "column": 5}, "end": {"line": 64, "column": 119}, "value": 4},
+          {"unit_name": "__eq__", "start": {"line": 66, "column": 5}, "end": {"line": 69, "column": 79}, "value": 4},
+          {"unit_name": "__str__", "start": {"line": 71, "column": 5}, "end": {"line": 72, "column": 101}, "value": 2},
+          {"unit_name": "relative_datetime", "start": {"line": 75, "column": 5}, "end": {"line": 83, "column": 34}, "value": 7},
+          {"unit_name": "absolute_datetime", "start": {"line": 86, "column": 5}, "end": {"line": 88, "column": 65}, "value": 3},
+          {"unit_name": "__init__", "start": {"line": 99, "column": 5}, "end": {"line": 102, "column": 25}, "value": 4}
+        ]
+      },
+      "twtxt/mentions.py": {
+        "checksum": "85029db4a203ef4f6ed3e3d4f1e11055",
+        "language": "Python",
+        "loc": 44,
+        "profile": [44, 0, 0, 0],
+        "measurements": [
+          {"unit_name": "get_source_by_url", "start": {"line": 19, "column": 1}, "end": {"line": 23, "column": 82}, "value": 5},
+          {"unit_name": "get_source_by_name", "start": {"line": 26, "column": 1}, "end": {"line": 31, "column": 84}, "value": 6},
+          {"unit_name": "expand_mentions", "start": {"line": 34, "column": 1}, "end": {"line": 53, "column": 54}, "value": 8},
+          {"unit_name": "handle_mention", "start": {"line": 45, "column": 5}, "end": {"line": 51, "column": 28}, "value": 7},
+          {"unit_name": "format_mention", "start": {"line": 56, "column": 1}, "end": {"line": 66, "column": 36}, "value": 11},
+          {"unit_name": "format_mentions", "start": {"line": 69, "column": 1}, "end": {"line": 85, "column": 48}, "value": 4},
+          {"unit_name": "handle_mention", "start": {"line": 81, "column": 5}, "end": {"line": 83, "column": 42}, "value": 3}
+        ]
+      },
+      "twtxt/cache.py": {
+        "checksum": "b8f1656f9ffe4272569ddeaca7b68cb9",
+        "language": "Python",
+        "loc": 87,
+        "profile": [87, 0, 0, 0],
+        "measurements": [
+          {"unit_name": "__init__", "start": {"line": 25, "column": 5}, "end": {"line": 35, "column": 47}, "value": 5},
+          {"unit_name": "__enter__", "start": {"line": 37, "column": 5}, "end": {"line": 38, "column": 20}, "value": 2},
+          {"unit_name": "__exit__", "start": {"line": 40, "column": 5}, "end": {"line": 41, "column": 28}, "value": 2},
+          {"unit_name": "from_file", "start": {"line": 44, "column": 5}, "end": {"line": 51, "column": 20}, "value": 8},
+          {"unit_name": "discover", "start": {"line": 54, "column": 5}, "end": {"line": 57, "column": 52}, "value": 4},
+          {"unit_name": "last_updated", "start": {"line": 60, "column": 5}, "end": {"line": 65, "column": 21}, "value": 6},
+          {"unit_name": "is_valid", "start": {"line": 68, "column": 5}, "end": {"line": 73, "column": 25}, "value": 6},
+          {"unit_name": "mark_updated", "start": {"line": 75, "column": 5}, "end": {"line": 78, "column": 52}, "value": 4},
+          {"unit_name": "is_cached", "start": {"line": 80, "column": 5}, "end": {"line": 85, "column": 25}, "value": 6},
+          {"unit_name": "last_modified", "start": {"line": 87, "column": 5}, "end": {"line": 92, "column": 24}, "value": 6},
+          {"unit_name": "add_tweets", "start": {"line": 94, "column": 5}, "end": {"line": 101, "column": 25}, "value": 8},
+          {"unit_name": "get_tweets", "start": {"line": 103, "column": 5}, "end": {"line": 110, "column": 22}, "value": 8},
+          {"unit_name": "remove_tweets", "start": {"line": 112, "column": 5}, "end": {"line": 119, "column": 25}, "value": 8},
+          {"unit_name": "close", "start": {"line": 121, "column": 5}, "end": {"line": 127, "column": 25}, "value": 7},
+          {"unit_name": "sync", "start": {"line": 129, "column": 5}, "end": {"line": 135, "column": 25}, "value": 7}
+        ]
+      },
+      "twtxt/cli.py": {
+        "checksum": "5bc683c57782d4692301e2602b720523",
+        "language": "Python",
+        "loc": 178,
+        "profile": [45, 59, 74, 0],
+        "measurements": [
+          {"unit_name": "cli", "start": {"line": 44, "column": 1}, "end": {"line": 64, "column": 29}, "value": 18},
+          {"unit_name": "tweet", "start": {"line": 76, "column": 1}, "end": {"line": 90, "column": 74}, "value": 13},
+          {"unit_name": "timeline", "start": {"line": 124, "column": 1}, "end": {"line": 166, "column": 54}, "value": 36},
+          {"unit_name": "view", "start": {"line": 196, "column": 1}, "end": {"line": 198, "column": 26}, "value": 3},
+          {"unit_name": "following", "start": {"line": 212, "column": 1}, "end": {"line": 223, "column": 56}, "value": 11},
+          {"unit_name": "follow", "start": {"line": 233, "column": 1}, "end": {"line": 251, "column": 46}, "value": 16},
+          {"unit_name": "unfollow", "start": {"line": 257, "column": 1}, "end": {"line": 273, "column": 43}, "value": 15},
+          {"unit_name": "quickstart", "start": {"line": 277, "column": 1}, "end": {"line": 328, "column": 88}, "value": 38},
+          {"unit_name": "overwrite_check", "start": {"line": 294, "column": 5}, "end": {"line": 296, "column": 89}, "value": 3},
+          {"unit_name": "config", "start": {"line": 341, "column": 1}, "end": {"line": 371, "column": 24}, "value": 25}
+        ]
+      },
+      "twtxt/__main__.py": {
+        "checksum": "4eba5e7da50c39c6d87fa598dca64786",
+        "language": "Python",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      },
+      "twtxt/config.py": {
+        "checksum": "02205b95bbe967e9e6112958e2d62a4c",
+        "language": "Python",
+        "loc": 159,
+        "profile": [108, 19, 32, 0],
+        "measurements": [
+          {"unit_name": "__init__", "start": {"line": 31, "column": 5}, "end": {"line": 33, "column": 23}, "value": 3},
+          {"unit_name": "from_file", "start": {"line": 36, "column": 5}, "end": {"line": 54, "column": 56}, "value": 14},
+          {"unit_name": "discover", "start": {"line": 57, "column": 5}, "end": {"line": 60, "column": 35}, "value": 4},
+          {"unit_name": "create_config", "start": {"line": 63, "column": 5}, "end": {"line": 93, "column": 20}, "value": 19},
+          {"unit_name": "write_config", "start": {"line": 95, "column": 5}, "end": {"line": 98, "column": 40}, "value": 4},
+          {"unit_name": "following", "start": {"line": 101, "column": 5}, "end": {"line": 111, "column": 25}, "value": 10},
+          {"unit_name": "options", "start": {"line": 114, "column": 5}, "end": {"line": 120, "column": 22}, "value": 7},
+          {"unit_name": "nick", "start": {"line": 123, "column": 5}, "end": {"line": 124, "column": 90}, "value": 2},
+          {"unit_name": "twtfile", "start": {"line": 127, "column": 5}, "end": {"line": 128, "column": 90}, "value": 2},
+          {"unit_name": "twturl", "start": {"line": 131, "column": 5}, "end": {"line": 132, "column": 62}, "value": 2},
+          {"unit_name": "check_following", "start": {"line": 135, "column": 5}, "end": {"line": 136, "column": 78}, "value": 2},
+          {"unit_name": "use_pager", "start": {"line": 139, "column": 5}, "end": {"line": 140, "column": 73}, "value": 2},
+          {"unit_name": "use_cache", "start": {"line": 143, "column": 5}, "end": {"line": 144, "column": 72}, "value": 2},
+          {"unit_name": "porcelain", "start": {"line": 147, "column": 5}, "end": {"line": 148, "column": 73}, "value": 2},
+          {"unit_name": "disclose_identity", "start": {"line": 151, "column": 5}, "end": {"line": 152, "column": 81}, "value": 2},
+          {"unit_name": "character_limit", "start": {"line": 155, "column": 5}, "end": {"line": 156, "column": 74}, "value": 2},
+          {"unit_name": "character_warning", "start": {"line": 159, "column": 5}, "end": {"line": 160, "column": 76}, "value": 2},
+          {"unit_name": "limit_timeline", "start": {"line": 163, "column": 5}, "end": {"line": 164, "column": 71}, "value": 2},
+          {"unit_name": "timeline_update_interval", "start": {"line": 167, "column": 5}, "end": {"line": 168, "column": 81}, "value": 2},
+          {"unit_name": "use_abs_time", "start": {"line": 171, "column": 5}, "end": {"line": 172, "column": 76}, "value": 2},
+          {"unit_name": "timeout", "start": {"line": 175, "column": 5}, "end": {"line": 176, "column": 67}, "value": 2},
+          {"unit_name": "sorting", "start": {"line": 179, "column": 5}, "end": {"line": 180, "column": 71}, "value": 2},
+          {"unit_name": "source", "start": {"line": 183, "column": 5}, "end": {"line": 184, "column": 46}, "value": 2},
+          {"unit_name": "pre_tweet_hook", "start": {"line": 187, "column": 5}, "end": {"line": 188, "column": 70}, "value": 2},
+          {"unit_name": "post_tweet_hook", "start": {"line": 191, "column": 5}, "end": {"line": 192, "column": 71}, "value": 2},
+          {"unit_name": "add_source", "start": {"line": 194, "column": 5}, "end": {"line": 200, "column": 28}, "value": 6},
+          {"unit_name": "get_source_by_nick", "start": {"line": 202, "column": 5}, "end": {"line": 208, "column": 50}, "value": 4},
+          {"unit_name": "remove_source_by_nick", "start": {"line": 210, "column": 5}, "end": {"line": 220, "column": 23}, "value": 7},
+          {"unit_name": "build_default_map", "start": {"line": 222, "column": 5}, "end": {"line": 253, "column": 27}, "value": 32},
+          {"unit_name": "check_config_sanity", "start": {"line": 255, "column": 5}, "end": {"line": 273, "column": 23}, "value": 13}
+        ]
+      },
+      "twtxt/parser.py": {
+        "checksum": "72e5093b0b63f8893d1d7a0b66251d81",
+        "language": "Python",
+        "loc": 28,
+        "profile": [28, 0, 0, 0],
+        "measurements": [
+          {"unit_name": "make_aware", "start": {"line": 22, "column": 1}, "end": {"line": 24, "column": 64}, "value": 3},
+          {"unit_name": "parse_iso8601", "start": {"line": 27, "column": 1}, "end": {"line": 29, "column": 53}, "value": 3},
+          {"unit_name": "parse_tweets", "start": {"line": 32, "column": 1}, "end": {"line": 56, "column": 18}, "value": 13},
+          {"unit_name": "parse_tweet", "start": {"line": 59, "column": 1}, "end": {"line": 80, "column": 66}, "value": 9}
+        ]
+      },
+      "docs/conf.py": {
+        "checksum": "25124735efecdf39751629690b46e32c",
+        "language": "Python",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      }
+    }
+  }
+}
